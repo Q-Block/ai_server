@@ -80,7 +80,7 @@ const checkAndProcessURL = (url, url_id, qr_status) => {
       console.log('해당 URL이 데이터베이스에 없음. Flask AI 서버로 요청을 전송합니다.');
 
       // Flask AI 서버로 URL, url_id, qr_status 전송
-      axios.post('http://127.0.0.1:5000/check-url', {
+      axios.post('http://BASE_URL/check-url', {
         url: url,
         url_id: url_id,
         qr_status: qr_status
